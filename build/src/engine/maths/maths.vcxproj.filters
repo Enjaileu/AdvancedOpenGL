@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Matrix4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Matrix4Row.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\Vector4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\maths\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FC156ED9-903D-3E28-9846-E9F4A39E9BD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

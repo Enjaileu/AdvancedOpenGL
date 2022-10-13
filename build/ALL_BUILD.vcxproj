@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4F46BE3-AC0D-399E-BEB3-0655C30BEC4F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\include;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\include;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\include;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\include;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\bin\cmake.exe -SD:/TD4/SIONNEAU_Angele/AdvancedOpenGL -BD:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build --check-stamp-file D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPack.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTest.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestTargets.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\DartConfiguration.tcl.in;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindGLEW.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Templates\CPackConfig.cmake.in;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\SDL2Config.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\glew-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\bin\cmake.exe -SD:/TD4/SIONNEAU_Angele/AdvancedOpenGL -BD:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build --check-stamp-file D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPack.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTest.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestTargets.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\DartConfiguration.tcl.in;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindGLEW.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Templates\CPackConfig.cmake.in;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\SDL2Config.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\glew-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\bin\cmake.exe -SD:/TD4/SIONNEAU_Angele/AdvancedOpenGL -BD:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build --check-stamp-file D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPack.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTest.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestTargets.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\DartConfiguration.tcl.in;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindGLEW.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Templates\CPackConfig.cmake.in;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\SDL2Config.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\glew-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\bin\cmake.exe -SD:/TD4/SIONNEAU_Angele/AdvancedOpenGL -BD:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build --check-stamp-file D:/TD4/SIONNEAU_Angele/AdvancedOpenGL/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPack.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTest.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestTargets.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\DartConfiguration.tcl.in;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindGLEW.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\angele.sionneau\scoop\apps\cmake\3.24.2\share\cmake-3.24\Templates\CPackConfig.cmake.in;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\SDL2-2.0.12\SDL2Config.cmake;D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\external\glew-2.1.0\glew-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\ZERO_CHECK.vcxproj">
+      <Project>{7B7F24AD-8ECE-356B-887B-34EB8FF0D024}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\OpenGLTraining.vcxproj">
+      <Project>{649112A6-5007-30E7-BB6B-3AD7FCEDA18E}</Project>
+      <Name>OpenGLTraining</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\src\engine\engine.vcxproj">
+      <Project>{8CE79583-0ADB-380D-BF73-A88D42FC91BC}</Project>
+      <Name>engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\src\game\game.vcxproj">
+      <Project>{BC9F639B-D2A3-3FD7-BFA7-3F42E264AA62}</Project>
+      <Name>game</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\src\engine\input\input.vcxproj">
+      <Project>{674CC10D-FF9C-3DC7-B7AC-65FB95BB7215}</Project>
+      <Name>input</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\src\engine\maths\maths.vcxproj">
+      <Project>{E33B1E72-AD93-3A7B-9FDD-D601413367A4}</Project>
+      <Name>maths</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

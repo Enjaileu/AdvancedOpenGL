@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\33643473ae71526f0a02506082f87b64\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4DF3B124-42B1-302B-8E05-521C767F2BBD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

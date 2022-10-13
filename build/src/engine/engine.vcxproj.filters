@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Assets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\ComputeShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\MeshObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\TextureKtx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\WindowSdl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FC156ED9-903D-3E28-9846-E9F4A39E9BD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

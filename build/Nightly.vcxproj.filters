@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\1c1cbbb7c4ec72dd8c81d458f3094b43\Nightly.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\build\CMakeFiles\Nightly" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4DF3B124-42B1-302B-8E05-521C767F2BBD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

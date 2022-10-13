@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\input\InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\input\Input_ControllerState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\input\Input_KeyboardState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\input\Input_MouseState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\engine\input\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FC156ED9-903D-3E28-9846-E9F4A39E9BD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
