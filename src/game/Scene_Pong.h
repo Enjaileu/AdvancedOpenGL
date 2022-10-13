@@ -39,6 +39,7 @@ private:
     float racketSpeed{2.f};
 
     bool IsCollided(CubeObject cube1P, CubeObject cube2P);
+    bool IsColliedWalls(CubeObject cube1P);
 };
 
 

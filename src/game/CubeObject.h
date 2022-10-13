@@ -16,6 +16,8 @@ public:
 
   float GetX() const { return x; }
   float GetY() const { return y; }
+  float GetWidth() const {return scaleW*0.25;}
+  float GetHeight() const {return scaleH*0.25;}
   void SetPosition(float xP, float yP);
   Matrix4 ComputeTransform();
 
