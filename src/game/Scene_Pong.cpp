@@ -35,8 +35,14 @@ void Scene_Pong::load() {
 
     shader = Assets::getShader(SHADER_ID(SHADER_NAME));
 
-    cubes.emplace_back(0.0f, 0.0f, cubeMesh);
-    cubes.emplace_back(-3.f, 0.f, cubeMesh);
+    //ball
+    cubes.emplace_back(0.0f, 0.0f, 0.5f, 0.5f, 0.5f, cubeMesh);
+    //walls
+    cubes.emplace_back(3.5f, 0.f, 1.f, 10.f, 1.f, cubeMesh);
+    cubes.emplace_back(0.f, -2.f, 15.f, 1.f, 1.f, cubeMesh);
+    cubes.emplace_back(0.f, 2.f, 15.f, 1.f, 1.f, cubeMesh);
+    //racket
+    cubes.emplace_back(-3.f, 0.f, 0.5f, 2.f, 1.f, cubeMesh);
 }
 
 void Scene_Pong::clean() {
@@ -54,18 +60,22 @@ void Scene_Pong::handleEvent(const InputState &inputState) {
 }
 
 void Scene_Pong::update(float dt) {
+
+   // Keyboard state
+   const Uint8* keyboardState = SDL_GetKeyboardState(nullptr);
+	if (keyboardState[SDL_SCANCODE_UP]) {
+        cubes[4].SetPosition(cubes[4].GetX(), cubes[4].GetY()+ (racketSpeed*dt));
+	}
+    else if(keyboardState[SDL_SCANCODE_DOWN]){
+        cubes[4].SetPosition(cubes[4].GetX(), cubes[4].GetY()- (racketSpeed*dt));
+    }
+
+    /*
     cubes[0].SetPosition(cubes[0].GetX() + (ballSpeedX*dt), cubes[0].GetY());
     if(cubes[0].GetX() >= 3|| cubes[0].GetX() <= -3){
         ballSpeedX *= -1;
     }
-    /*
-    ball->SetPosition(ball->GetX() + (ballSpeedX*dt), ball->GetY() + (ballSpeedY*dt));
-    if(ball->GetX() >= 10|| ball->GetX() <= 0){
-        ballSpeedX *= -1;
-    }
-    else if( ball->GetY() <= 0 || ball->GetY() >= 10){
-        ballSpeedY *= -1;
-    }*/
+    */
 }
 
 void Scene_Pong::draw() {

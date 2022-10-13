@@ -35,6 +35,7 @@ private:
     CubeObject* ball;
     float ballSpeedX{3.f};
     float ballSpeedY{3.f};
+    float racketSpeed{2.f};
 };
 
 

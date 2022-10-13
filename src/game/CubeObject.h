@@ -8,7 +8,9 @@ class CubeMesh;
 
 class CubeObject {
 public:
-  CubeObject(float xP, float yP, CubeMesh* cubeMeshP);
+  CubeObject(float xP, float yP, 
+    float scaleWP, float scaleHP, float ScaleDP,
+    CubeMesh* cubeMeshP);
 
   void Draw(Shader& shader);
 
@@ -20,6 +22,9 @@ public:
 private:
   float x { 0.0f };
   float y { 0.0f };
+  float scaleW{1.f};
+  float scaleH{1.f};
+  float scaleD{1.f};
   Matrix4 transform {};
 
   CubeMesh* cubeMesh { nullptr };

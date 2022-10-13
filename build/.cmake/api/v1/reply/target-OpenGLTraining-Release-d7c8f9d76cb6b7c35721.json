@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/OpenGLTraining.exe"
+			"path" : "Release/OpenGLTraining.exe"
 		},
 		{
-			"path" : "Debug/OpenGLTraining.pdb"
+			"path" : "Release/OpenGLTraining.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -58,7 +58,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD"
 				},
 				{
 					"fragment" : "-std:c++17"
@@ -110,10 +110,6 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "maths::@5810069d2bb47800fe83"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "engine::@d30147da1c6e0503853c"
 		},
 		{
@@ -122,10 +118,14 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "game::@237b513620d2b2ecc71d"
+			"id" : "maths::@5810069d2bb47800fe83"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "game::@237b513620d2b2ecc71d"
 		}
 	],
 	"id" : "OpenGLTraining::@6890427a1f51a3e7e1df",
@@ -134,31 +134,31 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "src\\game\\Debug\\game.lib",
+				"fragment" : "src\\game\\Release\\game.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "src\\engine\\Debug\\engine.lib",
+				"fragment" : "src\\engine\\Release\\engine.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "src\\engine\\maths\\Debug\\maths.lib",
+				"fragment" : "src\\engine\\maths\\Release\\maths.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "src\\engine\\input\\Debug\\input.lib",
+				"fragment" : "src\\engine\\input\\Release\\input.lib",
 				"role" : "libraries"
 			},
 			{
