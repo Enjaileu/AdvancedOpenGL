@@ -37,12 +37,14 @@ void Scene_Pong::load() {
 
     //ball
     cubes.emplace_back(0.0f, 0.0f, 0.5f, 0.5f, 0.5f, cubeMesh);
+    ball = &cubes[0];
     //walls
     cubes.emplace_back(3.5f, 0.f, 1.f, 10.f, 1.f, cubeMesh);
     cubes.emplace_back(0.f, -2.f, 15.f, 1.f, 1.f, cubeMesh);
     cubes.emplace_back(0.f, 2.f, 15.f, 1.f, 1.f, cubeMesh);
     //racket
     cubes.emplace_back(-3.f, 0.f, 0.5f, 2.f, 1.f, cubeMesh);
+    racket = &cubes[4];
 }
 
 void Scene_Pong::clean() {
@@ -64,10 +66,10 @@ void Scene_Pong::update(float dt) {
    // Keyboard state
    const Uint8* keyboardState = SDL_GetKeyboardState(nullptr);
 	if (keyboardState[SDL_SCANCODE_UP]) {
-        cubes[4].SetPosition(cubes[4].GetX(), cubes[4].GetY()+ (racketSpeed*dt));
+        racket->SetPosition(racket->GetX(), racket->GetY()+ (racketSpeed*dt));
 	}
     else if(keyboardState[SDL_SCANCODE_DOWN]){
-        cubes[4].SetPosition(cubes[4].GetX(), cubes[4].GetY()- (racketSpeed*dt));
+        racket->SetPosition(racket->GetX(), racket->GetY()- (racketSpeed*dt));
     }
 
     /*

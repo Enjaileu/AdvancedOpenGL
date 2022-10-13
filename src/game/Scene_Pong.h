@@ -33,9 +33,12 @@ private:
     vector<CubeObject> cubes;
 
     CubeObject* ball;
-    float ballSpeedX{3.f};
-    float ballSpeedY{3.f};
+    CubeObject* racket;
+    float ballSpeedX{4.f};
+    float ballSpeedY{4.f};
     float racketSpeed{2.f};
+
+    bool IsCollided(CubeObject cube1P, CubeObject cube2P);
 };
 
 
