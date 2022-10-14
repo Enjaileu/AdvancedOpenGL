@@ -36,14 +36,28 @@ void Scene_Pong::load() {
     shader = Assets::getShader(SHADER_ID(SHADER_NAME));
 
     //ball
-    cubes.emplace_back(0.0f, 0.0f, 0.5f, 0.5f, 0.5f, cubeMesh);
-    
+    cubes.emplace_back(0.0f, 0.0f, -4.f, 
+                    0.5f, 0.5f, 0.3f, 
+                    cubeMesh);
     //walls
-    cubes.emplace_back(3.5f, 0.f, 1.f, 10.f, 1.f, cubeMesh);
-    cubes.emplace_back(0.f, -2.f, 15.f, 1.f, 1.f, cubeMesh);
-    cubes.emplace_back(0.f, 2.f, 15.f, 1.f, 1.f, cubeMesh);
+    cubes.emplace_back(3.5f, 0.f, -4.f,
+                    1.f, 10.f, 1.f, 
+                    cubeMesh);
+    cubes.emplace_back(0.f, -2.f, -4.f,
+                    15.f, 1.f, 1.f, 
+                    cubeMesh);
+    cubes.emplace_back(0.f, 2.f, -4.f,
+                    15.f, 1.f, 1.f, 
+                    cubeMesh);
     //racket
-    cubes.emplace_back(-3.f, 0.f, 0.5f, 1.7f, 1.f, cubeMesh);
+    cubes.emplace_back(-3.f, 0.f, -4.f, 
+                    0.3f, 1.5f, 0.5f, 
+                    cubeMesh);
+    //bg
+    cubes.emplace_back(0.f, 0.f, -5.f,
+                    18.f, 15.f, 1.f, 
+                    cubeMesh);
+    
     ball = &cubes[0];
     racket = &cubes[4];
 }
@@ -68,17 +82,17 @@ void Scene_Pong::update(float dt) {
    const Uint8* keyboardState = SDL_GetKeyboardState(nullptr);
 	if (keyboardState[SDL_SCANCODE_UP]) {
         if(!IsCollided(*racket, cubes[3])){
-            racket->SetPosition(racket->GetX(), racket->GetY()+ (racketSpeed*dt));
+            racket->SetPosition(racket->GetX(), racket->GetY()+ (racketSpeed*dt), racket->GetZ());
         }
 	}
     else if(keyboardState[SDL_SCANCODE_DOWN]){
         if(!IsCollided(*racket, cubes[2])){
-            racket->SetPosition(racket->GetX(), racket->GetY()- (racketSpeed*dt));
+            racket->SetPosition(racket->GetX(), racket->GetY()- (racketSpeed*dt), racket->GetZ());
         }
     }
 
     //ball deplacement
-    ball->SetPosition(ball->GetX() + ballSpeedX * dt, ball->GetY() + ballSpeedY * dt);
+    ball->SetPosition(ball->GetX() + ballSpeedX * dt, ball->GetY() + ballSpeedY * dt, ball->GetZ());
     if(IsCollided(*ball, cubes[3]) || IsCollided(*ball, cubes[2])){
         ballSpeedY *= -1;
     }else if(IsCollided(*ball, *racket) || IsCollided(*ball, cubes[1])){
@@ -87,7 +101,7 @@ void Scene_Pong::update(float dt) {
 
     //gameover
     if(ball->GetX() <= -4){
-        ball->SetPosition(-1.f, 0.0);
+        ball->SetPosition(-1.f, 0.f, -4.f);
         ballSpeedX = {4.f};
     }
 }
