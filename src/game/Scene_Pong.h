@@ -29,8 +29,7 @@ private:
     Matrix4 projection;
 
     Shader shaderBall;
-    Shader shaderWall;
-    Shader shaderRacket;
+    Shader shaderWallBack;
     vector<CubeObject> cubes;
 
     CubeObject* ball;

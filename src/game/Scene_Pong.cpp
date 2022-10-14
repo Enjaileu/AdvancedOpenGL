@@ -22,11 +22,9 @@ void Scene_Pong::setGame(Game *_game) {
 void Scene_Pong::load() {
     std::srand((int) std::time(nullptr));
     Assets::loadShader("assets/shaders/Pong.vert", "assets/shaders/Pong.frag", "", "", "", "Pong");
-    Assets::loadShader("assets/shaders/Pong.vert", "assets/shaders/006_Fragment.frag", "", "", "", "Fragment");
-    Assets::loadShader("assets/shaders/Pong.vert", "assets/shaders/005_Tessellation.frag", "", "", "", "Tesselation");
-    shaderBall = Assets::getShader(SHADER_ID(IDENT(Fragment)));
-    shaderWall = Assets::getShader(SHADER_ID(IDENT(Pong)));
-    shaderRacket = Assets::getShader(SHADER_ID(IDENT(Tesselation)));
+    Assets::loadShader("assets/shaders/Pong.vert", "assets/shaders/003_triangle.frag", "", "", "", "Grass");
+    shaderBall = Assets::getShader(SHADER_ID(IDENT(Pong)));
+    shaderWallBack = Assets::getShader(SHADER_ID(IDENT(Grass)));
     projection = Matrix4::createPerspectiveFOV(70.0f, game->windowWidth, game->windowHeight, 0.1f, 1000.0f);
 
     cubeMesh = new CubeMesh();
@@ -38,8 +36,6 @@ void Scene_Pong::load() {
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
 
-    //shader = Assets::getShader(SHADER_ID(SHADER_NAME));
-
     //ball
     cubes.emplace_back(0.0f, 0.0f, -4.f, 
                     0.5f, 0.5f, 0.3f, 
@@ -48,21 +44,21 @@ void Scene_Pong::load() {
     //walls
     cubes.emplace_back(3.5f, 0.f, -4.f,
                     1.f, 10.f, 1.f, 
-                    cubeMesh, shaderWall);
+                    cubeMesh, shaderBall);
     cubes.emplace_back(0.f, -2.f, -4.f,
                     15.f, 1.f, 1.f, 
-                    cubeMesh, shaderWall);
+                    cubeMesh, shaderBall);
     cubes.emplace_back(0.f, 2.f, -4.f,
                     15.f, 1.f, 1.f, 
-                    cubeMesh, shaderWall);
+                    cubeMesh, shaderBall);
     //racket
     cubes.emplace_back(-3.f, 0.f, -4.f, 
                     0.3f, 1.5f, 0.5f, 
-                    cubeMesh, shaderRacket);
+                    cubeMesh, shaderBall);
     //bg
     cubes.emplace_back(0.f, 0.f, -5.f,
                     18.f, 15.f, 1.f, 
-                    cubeMesh, shaderWall);
+                    cubeMesh, shaderWallBack);
     
     ball = &cubes[0];
     racket = &cubes[4];
@@ -84,6 +80,7 @@ void Scene_Pong::handleEvent(const InputState &inputState) {
 }
 
 void Scene_Pong::update(float dt) {
+   
    // Keyboard state
    const Uint8* keyboardState = SDL_GetKeyboardState(nullptr);
 	if (keyboardState[SDL_SCANCODE_UP]) {
@@ -96,7 +93,7 @@ void Scene_Pong::update(float dt) {
             racket->SetPosition(racket->GetX(), racket->GetY()- (racketSpeed*dt), racket->GetZ());
         }
     }
-
+    
     //ball deplacement
     ball->SetPosition(ball->GetX() + ballSpeedX * dt, ball->GetY() + ballSpeedY * dt, ball->GetZ());
     if(IsCollided(*ball, cubes[3]) || IsCollided(*ball, cubes[2])){

@@ -270,31 +270,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\CubeObject.cpp" />
     <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Game.cpp" />
     <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\SceneMain.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_001_Color.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_002_Point.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_003_Triangle.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_004_PassingData.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_005_Tessellation.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_006_Fragment.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_007_SpinningCube.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_008_SpinningCubes.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_009_TextureAsData.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_010_TextureCoordinates.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_011_MipmapTunnel.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_012_ArrayTextureAlienRain.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_013_InstancedGrassBlades.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_014_IndirectDrawAstroids.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_015_TessellationModes.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_016_TerrainRendering.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_017_CubicBezierPatches.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_018_DiscardGeometry.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_019_ModifyGeometry.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_020_GenerateGeometry.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_021_ChangePrimitiveType.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_022_ComputeShaderPrefixSum.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_023_ComputeShaderGrid.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_024_ComputeShaderRaytacing.cpp" />
-    <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_025_ComputeShaderBoids.cpp" />
     <ClCompile Include="D:\TD4\SIONNEAU_Angele\AdvancedOpenGL\src\game\Scene_Pong.cpp" />
   </ItemGroup>
   <ItemGroup>
