@@ -26,10 +26,11 @@ private:
     Game *game;
     CubeMesh* cubeMesh;
 
-    Matrix4 transform;
     Matrix4 projection;
 
-    Shader shader;
+    Shader shaderBall;
+    Shader shaderWall;
+    Shader shaderRacket;
     vector<CubeObject> cubes;
 
     CubeObject* ball;

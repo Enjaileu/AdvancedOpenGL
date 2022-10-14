@@ -2,6 +2,7 @@
 #define CUBEOBJECT_H
 
 #include "../engine/maths/Matrix4.h"
+#include "../engine/Shader.h"
 
 class Shader;
 class CubeMesh;
@@ -10,9 +11,9 @@ class CubeObject {
 public:
   CubeObject(float xP, float yP, float zP,
     float scaleWP, float scaleHP, float ScaleDP,
-    CubeMesh* cubeMeshP);
+    CubeMesh* cubeMeshP, Shader shaderP);
 
-  void Draw(Shader& shader);
+  void Draw(Matrix4 pojectionP);
 
   float GetX() const { return x; }
   float GetY() const { return y; }
@@ -32,6 +33,7 @@ private:
   Matrix4 transform {};
 
   CubeMesh* cubeMesh { nullptr };
+  Shader shader;
   
 };
 

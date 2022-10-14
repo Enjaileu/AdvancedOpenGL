@@ -1,19 +1,24 @@
 #include "CubeObject.h"
 #include "../engine/Shader.h"
+#include "../engine/MacroUtils.h"
+#include "../engine/Assets.h"
 #include "CubeMesh.h"
 
 CubeObject::CubeObject(float xP, float yP, float zP,
   float scaleWP, float scaleHP, float scaleDP,
-  CubeMesh* cubeMeshP):
+  CubeMesh* cubeMeshP, Shader shaderP):
 cubeMesh {cubeMeshP},
 scaleW{scaleWP},
 scaleH{scaleHP},
-scaleD{scaleDP}
+scaleD{scaleDP},
+shader{shaderP}
 {
   SetPosition(xP, yP, zP);
 }
 
-void CubeObject::Draw(Shader& shader){
+void CubeObject::Draw(Matrix4 projectionP){
+  shader.use();
+  shader.setMatrix4("proj_matrix", projectionP);
   shader.setMatrix4("mv_matrix", transform);
   cubeMesh->Draw();
 }
